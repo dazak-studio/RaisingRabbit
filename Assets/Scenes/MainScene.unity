@@ -188,7 +188,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447516741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1951287327}
@@ -276,7 +276,7 @@ Transform:
   m_GameObject: {fileID: 540313124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -289,6 +289,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1088152489}
+  - component: {fileID: 1088152490}
   m_Layer: 0
   m_Name: PlayerRabbit
   m_TagString: Untagged
@@ -311,6 +312,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1088152490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1088152488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabeaa951735cc14ba071b14cf55ae69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rabbitModel: {fileID: 1673268361}
 --- !u!1001 &1441761841
 Prefab:
   m_ObjectHideFlags: 0
@@ -352,15 +365,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e7bdedb2b9a0c854cbf0718623d9a7f2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e7bdedb2b9a0c854cbf0718623d9a7f2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e7bdedb2b9a0c854cbf0718623d9a7f2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e7bdedb2b9a0c854cbf0718623d9a7f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -369,6 +382,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7bdedb2b9a0c854cbf0718623d9a7f2, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1673268361 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: e7bdedb2b9a0c854cbf0718623d9a7f2, type: 3}
+  m_PrefabInternal: {fileID: 1441761841}
 --- !u!4 &1673268362 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e7bdedb2b9a0c854cbf0718623d9a7f2, type: 3}
