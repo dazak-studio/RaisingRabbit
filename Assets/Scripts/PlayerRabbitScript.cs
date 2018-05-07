@@ -10,7 +10,6 @@ public class PlayerRabbitScript : MonoBehaviour {
     private int growth = 1;
 
 	void Start () {
-		
 	}
 	
 	void Update () {

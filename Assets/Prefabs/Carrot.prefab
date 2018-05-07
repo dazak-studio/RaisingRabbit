@@ -170,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13346f03e2809b54bbd8d5d6c85cffab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biteSound: {fileID: 0}
 --- !u!136 &136383999346431088
 CapsuleCollider:
   m_ObjectHideFlags: 1

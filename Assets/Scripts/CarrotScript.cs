@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CarrotScript : MonoBehaviour {
-
+    
 	void Start () {
-		
 	}
 	
 	void Update () {
