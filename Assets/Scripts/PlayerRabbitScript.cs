@@ -5,20 +5,24 @@ using UnityEngine;
 public class PlayerRabbitScript : MonoBehaviour {
 
 	public GameObject rabbitModel;
-
 	private const float rabbitVelocity = 5.0f;
-
 	private Vector3 destinationPos;
-	// Use this for initialization
+    private int growth = 1;
+
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		SetDestinationWhenClicked ();
 		MoveIfNotArrived ();
 	}
+
+    private void SetScaleByGrowth()
+    {
+        float scaleLength = Mathf.Pow((float)growth, 0.333f);
+        transform.localScale = new Vector3(scaleLength, scaleLength, scaleLength);
+    }
 
 	private void SetDestinationWhenClicked()
 	{
@@ -48,4 +52,10 @@ public class PlayerRabbitScript : MonoBehaviour {
 			rabbitModel.transform.rotation = Quaternion.LookRotation (direction);
 		}
 	}
+
+    public void IncreaseGrowth(int incGrowth)
+    {
+        growth += incGrowth;
+        SetScaleByGrowth();
+    }
 }
