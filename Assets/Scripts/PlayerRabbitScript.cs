@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerRabbitScript : MonoBehaviour {
 
 	public GameObject rabbitModel;
+    public AudioSource biteSound;
 	private const float rabbitVelocity = 5.0f;
 	private Vector3 destinationPos;
     private int growth = 1;
@@ -56,5 +57,11 @@ public class PlayerRabbitScript : MonoBehaviour {
     {
         growth += incGrowth;
         SetScaleByGrowth();
+    }
+
+    public void PlayBiteSound()
+    {
+        biteSound.time = 0.0f;
+        biteSound.Play();
     }
 }

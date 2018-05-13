@@ -16,6 +16,7 @@ public class CarrotScript : MonoBehaviour {
         if(other.gameObject == MainManagerScript.GetInstance().playerRabbit)
         {
             MainManagerScript.GetInstance().GetPlayerRabbitScript().IncreaseGrowth(1);
+            MainManagerScript.GetInstance().GetPlayerRabbitScript().PlayBiteSound();
             Destroy(this.gameObject);
         }
     }
